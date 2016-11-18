@@ -2,9 +2,9 @@
 I built my project with Windows, so you might need to change the following lines of code.
 
 In package.json line 7
-  change:
-    "prestart":, "psql -U postgres -f blog.sql"
-  to:
+change:
+'"prestart":, "psql -U postgres -f blog.sql"'
+to:
     "prestart":, "psql -f blog.sql"
 In app.js line 5
   change:
