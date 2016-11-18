@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <title>Blog</title>
+  </head>
+  <body>
+    <div id="main-content">
+      <h1>The Mikulecky Mouthful</h1>
+      <p>Click on the titles to see more</p>
+      <br>
+      <form action="/post/new" method="get">
+        <input type="submit" value="New Post">
+      </form>
+      <br><br><br>
+      <table>
+        <% data.forEach(function(post){ %>
+          <tr>
+            <td id="td"><a href="/post/<%= post.id %>"><div class="title"><%= post.title %></div></a></td>
+            <td><a href="/post/<%= post.id %>/edit">Edit</a></td>
+            <td><a href="/post/<%= post.id %>?_method=DELETE">Delete</a></td>
+          </tr>
+        <% }); %>
+      </table>
+    </div>
+  </body>
+</html>

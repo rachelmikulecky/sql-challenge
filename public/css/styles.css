@@ -1,0 +1,51 @@
+body{
+  background-color: #e6f2ff;
+
+}
+#main-content{
+  font-family: sans-serif;
+  text-align: center;
+}
+input, textarea{
+  font-family: sans-serif;
+  padding: 8px;
+}
+input[type="submit"] {
+  background-color: #006666;
+  color: white;
+  border: none;
+}
+
+#post-main-content{
+  font-family: sans-serif;
+  text-align: center;
+  width: 50%;
+  margin:auto;
+}
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+#td{
+  font-weight: bolder;
+  padding: 15px;
+  background-color: white;
+
+}
+.post{
+  text-align: left;
+  padding: 15px;
+  background-color: white;
+  white-space:pre-wrap;
+  border: 1px solid #000000;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  color: blue;
+}
+.content{
+  white-space:pre;
+}
